@@ -11,7 +11,7 @@ import android.view.View;
  */
 public class ImageViewRotationHelper {
     private static final String TAG = ImageViewRotationHelper.class.getSimpleName();
-    private static final long ROTATION_DURATION = 500;
+    private static final long ROTATION_DURATION = 300;
 
     public static void rotate(final View target){
         final Integer start = 0;
