@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dev.activity.PullListFragment">
+
+    <com.pullrefresh.PullToRefreshLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/layout_classic_header" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false" />
+
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/layout_classic_footer" />
+
+    </com.pullrefresh.PullToRefreshLayout>
+
+</FrameLayout>
